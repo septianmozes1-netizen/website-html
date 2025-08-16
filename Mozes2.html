@@ -1,0 +1,57 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ <title>Form Registrasi</title>
+ </head>
+ <body>
+
+ <h1>Formulir Pendaftaran Ekstrakurikuler</h1>
+ 
+ <form action="proses.php" method="POST" enctype="multipart/form-data">
+ <label for="nama">Nama Lengkap:</label><br>
+ <input type="text" id="nama" name="nama" required><br><br>
+ 
+ <label for="email">Email:</label><br>
+ <input type="email" id="email" name="email" required><br><br>
+
+ <label for="No.Telfon">No.Telfon:</label><br>
+ <input type="No.Telfon" id="No.Telfon" name="No.Telfon" required><br><br>
+ 
+ <label>Jenis Kelamin:</label><br>
+ <input type="radio" name="gender" value="Laki-laki" required> Laki-laki
+ <input type="radio" name="gender" value="Perempuan"> Perempuan<br><br>
+
+ <label>Extra yang di minati:</label><br>
+ <input type="checkbox" name="hobi[]" value="Basket"> Basket
+<input type="checkbox" name="hobi[]" value="Taekwondo"> Taekwondo
+ <input type="checkbox" name="hobi[]" value="Muaythai"> Muaythai
+ <input type="checkbox" name="hobi[]" value="Badminton" > Badminton
+ <br><br>
+
+ <label for="kelas">Pilih Kelas:</label><br>
+ <select name="kelas" id="kelas" required>
+ <option value="">--Pilih Kelas--</option>
+ <option value="XI RPL 1">XI RPL 1</option>
+ <option value="XI RPL 2">XI RPL 2</option>
+ <option value="XI RPL 3">XI RPL 3</option>
+ <option value="XI PB 1">XI PB 1</option>
+ <option value="XI PB 2">XI PB 2</option>
+ <option value="XI AKL 1">XI AKL 1</option>
+ <option value="XI AKL 2">XI AKL 2</option>
+ <option value="XI AKL 3">XI AKL 3</option>
+ <option value="XI AKL 4">XI AKL 4</option>
+ <option value="XI AKL 5">XI AKL 5</option>
+ </select><br><br>
+
+<label for="foto">Upload Foto:</label><br>
+ <input type="file" name="foto" accept="image/*"><br><br>
+
+ <label for="deskripsi Minat & Bakat">deskripsi Minat & Bakat:</label><br>
+ <textarea name="alamat" id="alamat" rows="4" cols="40"
+required></textarea><br><br>
+
+ <input type="submit" value="Kirim">
+</form>
+
+ </body>
+ </html>
